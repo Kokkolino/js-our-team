@@ -33,17 +33,10 @@ const team = [
 
 for (let key in team) {
 
-    for(let i = 0; i<3; i++){
-        switch(i) {
-            case 0:
-                console.log(team[key].name)
-                break;
-            case 1:
-                console.log(team[key].role)
-                break;
-            case 2:
-                console.log(team[key].image)
-                break;
-        }
-    }
+    document.getElementById('cardSection').innerHTML += `
+    <div class="card">
+        <section class="profile"><img src="./assets/img/${team[key].image}"</section>
+        <section class="nameProfile"><h3>${team[key].name}</h3><p>${team[key].role}</p></section>
+    </div>`
+
 }
