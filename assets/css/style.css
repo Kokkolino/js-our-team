@@ -3,3 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-basis: 30%;
+    height: 150px;
+}
+
+.profile{
+    height: 75%;
+    width: 100%;
+}
+
+.nameProfile{
+    height: 25%;
+}
